@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  ghSearchUser: 'https://github.com'
+  ghSearchUser: 'https://github.com',
+  repoSearch: 'https://api.github.com/search/repositories?q=',
 };
 
 /*
