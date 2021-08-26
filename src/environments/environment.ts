@@ -6,6 +6,9 @@ export const environment = {
   production: false,
   ghSearchUser: 'https://github.com',
   repoSearch: 'https://api.github.com/search/repositories?q=',
+  kenApiUrl: 'https://api.github.com/search/users?q=',
+  userRepo: 'https://api.github.com/users/',
+  apiUrl: 'https://api.github.com'
 };
 
 /*

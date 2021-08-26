@@ -8,7 +8,7 @@
 /bazel-out
 
 #env files
-environment.ts 
+./src/environments
 
 # dependencies
 /node_modules
