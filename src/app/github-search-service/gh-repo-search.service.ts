@@ -41,7 +41,6 @@ export class GhRepoSearchService {
   }
 
   
-
   constructor(private http: HttpClient) { 
     this.repo = new GhRepo([]);
   }
