@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectRoutesModule } from './project-routes/project-routes.module';
+import { GhUserDetailsComponent } from './gh-user-details/gh-user-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    NavbarComponent
+    NavbarComponent,
+    GhUserDetailsComponent
   ],
   imports: [
     BrowserModule,
