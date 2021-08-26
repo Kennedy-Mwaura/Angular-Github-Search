@@ -8,13 +8,15 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProjectRoutesModule } from './project-routes/project-routes.module';
 import { GhUserDetailsComponent } from './gh-user-details/gh-user-details.component';
+import { KenProjectsComponent } from './ken-projects/ken-projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     NavbarComponent,
-    GhUserDetailsComponent
+    GhUserDetailsComponent,
+    KenProjectsComponent
   ],
   imports: [
     BrowserModule,
