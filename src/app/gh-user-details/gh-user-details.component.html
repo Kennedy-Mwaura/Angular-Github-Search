@@ -1,1 +1,13 @@
-<p>gh-user-details works!</p>
+<div class="container-fluid">
+    <div class="card" *ngFor="let u of user.items;let i=index">
+        <img class="card-img-top" src="{{u.avatar_url}}" alt="">
+        
+        <div class="card-body">
+            <hr>
+            <a href="{{u.html_url}}" target="_blank"><h4 class="card-title">{{u.login}}</h4></a>
+            
+        </div>
+    </div>
+
+    
+</div>
