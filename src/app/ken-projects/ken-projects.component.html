@@ -1,1 +1,40 @@
-<p>ken-projects works!</p>
+<div class="container-fluid">
+
+    <div class="side">
+        <div class="name">
+            <h4 class="text-center">{{ken.name}}</h4>
+            <img src="{{ken.avatar_url}}" alt="">   
+            
+            <div class="socials">
+                <a href="https://github.com/KenMwaura1" class="text-center" target="_blank"><i class="fab fa-github    "></i></a>
+                <a href="https://twitter.com/Ken_Mwaura1" class="text-center" target="_blank"><i class="fab fa-twitter    "></i></a>
+                <a href="mailto:kemwaura@gmail.com" class="text-center" target="_blank"><i class="far fa-envelope    "></i></a>
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="repos">
+
+        <h1 class="text text-center">My Repositories</h1>
+
+        <div class="repositories">
+            <div class="card  text-white" *ngFor="let r of repo.items;let i=index" appHighlight>
+                
+                <div class="card-body">
+                    <a href="{{r.html_url}}" target="_blank"><h4 class="card-title">{{r.name}}</h4></a>
+                    <hr>
+                    <p class="card-text">{{r.description}}</p><br>
+                    <p> ~ Created {{r.created_at}} days ago</p>
+
+                    <a href="{{r.homepage}}" target="_blank"> <button>Demo</button></a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    
+</div>
+
