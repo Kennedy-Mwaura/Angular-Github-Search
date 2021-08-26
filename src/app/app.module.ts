@@ -10,6 +10,7 @@ import { ProjectRoutesModule } from './project-routes/project-routes.module';
 import { GhUserDetailsComponent } from './gh-user-details/gh-user-details.component';
 import { KenProjectsComponent } from './ken-projects/ken-projects.component';
 import { HighlightDirective } from './highlight.directive';
+import { DateElapsedPipe } from './date-elapsed.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HighlightDirective } from './highlight.directive';
     NavbarComponent,
     GhUserDetailsComponent,
     KenProjectsComponent,
-    HighlightDirective
+    HighlightDirective,
+    DateElapsedPipe
   ],
   imports: [
     BrowserModule,
