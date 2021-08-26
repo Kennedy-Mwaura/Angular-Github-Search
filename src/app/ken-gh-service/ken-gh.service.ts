@@ -27,7 +27,7 @@ export class KenGhService {
   getRepoInfoByNameAndOwner(userName: string, repoName: string, owner: string) {
     return this.http.get(`${environment.apiUrl}/repos/${owner}/${repoName}`);
   }
-  
+
   KenRequest(){
     interface ApiResponse {
       name: string;
@@ -48,6 +48,26 @@ export class KenGhService {
     return promise;
 
   }
+  kenRepoRequest(){
+    interface ApiResponse {
+      results: any;
+    }
+    let promise= new Promise<void>((resolve, reject) => {
+      this.http.get<ApiResponse>(environment.kenRepoUrl).toPromise().then(response => {
+        this.repo.results = (response.results)
+
+        resolve()
+      }, error => {
+        this.repo.results = "error"
+        reject(error)
+      });
+
+    });
+    return promise;
+    
+  }
+
+
   
 
   constructor(private http: HttpClient) { 

@@ -7,6 +7,7 @@ export const environment = {
   ghSearchUser: 'https://github.com',
   repoSearch: 'https://api.github.com/search/repositories?q=',
   kenApiUrl: 'https://api.github.com/search/users?q=',
+  kenRepoUrl: '',
   userRepo: 'https://api.github.com/users/',
   apiUrl: 'https://api.github.com'
 };
