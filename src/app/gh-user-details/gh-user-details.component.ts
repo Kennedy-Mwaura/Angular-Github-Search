@@ -14,7 +14,6 @@ export class GhUserDetailsComponent implements OnInit {
   }
 
   
-
   ngOnInit(): void {
     this.user = this.ghuserservice.returnUser();
   }

@@ -11,6 +11,7 @@ import { GhUserDetailsComponent } from './gh-user-details/gh-user-details.compon
 import { KenProjectsComponent } from './ken-projects/ken-projects.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateElapsedPipe } from './date-elapsed.pipe';
+import { GhRepoDetailsComponent } from './gh-repo-details/gh-repo-details.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DateElapsedPipe } from './date-elapsed.pipe';
     GhUserDetailsComponent,
     KenProjectsComponent,
     HighlightDirective,
-    DateElapsedPipe
+    DateElapsedPipe,
+    GhRepoDetailsComponent
   ],
   imports: [
     BrowserModule,

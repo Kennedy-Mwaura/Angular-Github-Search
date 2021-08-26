@@ -1,0 +1,31 @@
+@font-face{
+    font-family: 'Metal Mania', cursive;
+    src: url(https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap);
+}
+
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-family: 'Metall Mania';
+}
+
+$primary-color: aqua;
+$secondary-color: aquamarine;
+
+.card{
+    width: 23%;
+    background-color: rgba(0, 0, 0,0.67);
+    color: $primary-color;
+    border: $secondary-color solid 1px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+a{
+    color: $primary-color;
+}
+
+hr{
+    background-color: $secondary-color;
+}
