@@ -1,21 +1,33 @@
 <div class="container-fluid">
     <div class="main">
+        <div class="row gh">
+            <div class="col-sm-3">
+        
+                <img src="{{ken.avatar_link}}" alt="">
+                
+            </div>
+            <div class="col-sm-9">
+        
+                <h1 class="text text-center display-4 white-text">{{ken.name}}</h1>
+                <a routerLink='/projects'><h3 class="text text-center " >Click here to see some of my Projects</h3></a>
+                
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-3">
         
                 <img src="{{ken.avatar_url}}" alt="">
                 
             </div>
-            <div class="col-sm-9">
-        
-                <h1 class="text text-center display-4">{{ken.name}}</h1>
-                <a routerLink='/projects'><h3 class="text text-center" >Click here to see some of my Projects</h3></a>
-                
+            <div class="col-sm-9 about">
+                <h2 class="text-center h2"> About</h2>
+                <p class="h4"> This a simple Angular project where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. A person can also look for repositories</p>
+     
             </div>
         </div>
-
+        
+    
     </div>
-
 
     <div class="socials">
         <a href="https://github.com/KenMwaura1" class="text-center" target="_blank"><i class="fab fa-github    "></i></a>

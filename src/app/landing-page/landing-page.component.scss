@@ -19,6 +19,11 @@ $secondary-color: aquamarine;
 a{
     color: $secondary-color;
 }
+.about {
+    font-family: Roboto, sans-serif;
+    color: whitesmoke;
+    padding: 4em;
+}
 
 .row{
     margin: auto;
@@ -33,7 +38,7 @@ a{
     font-family: 'Metal Mania', cursive;
     background: url("../../assets/images/bg-img.jpg")no-repeat center center;
     background-size: cover;
-    height: 90vh
+    height: 81vh;
     
 }
 
