@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+.container-fluid{
+    display: inline-block;
+}
+
+.side{
+    width: 10%;
+    float: left;
+    font-family: 'p';
+    padding-top: 20px;
+    position: -webkit-fixed;
+    position: fixed;
+}
+.name h5{
+    margin-bottom: 30px;
+    
+}
+
+.repos{
+    width: 90%;
+    float: right;
+    padding-top: 20px;
+    font-family: 'Metal Mania';
+}
+
+$primary-color: #00bcd4;
+$secondary-color: aquamarine;
+
+img{
+    width:90%;
+    border-radius: 50%;
+}
+a{
+    color: $primary-color;
+}
+hr{
+    background-color: gold;
+}
+
+.card{
+    background-color: rgba(1, 1, 1,0.47);
+    border: $primary-color 1px ridge;
+    width: 25%;
+}
+
+.repositories{
+    display: flex;
+    flex-wrap: wrap;
+}
+.socials{
+    display: grid;
+    align-items: center;
+}
+
+.socials a{
+    margin:10px;
+}
+button{
+    background: transparent;
+    color: $primary-color;
+    border: $primary-color 1px solid;
+}
+
+.card a{
+    text-align: center;
+    justify-content: center;
+}

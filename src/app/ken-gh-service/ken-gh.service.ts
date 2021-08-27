@@ -31,12 +31,13 @@ export class KenGhService {
   KenRequest(){
     interface ApiResponse {
       name: string;
-      avatar_link: string;
+      avatar_url: string;
     }
     let promise = new Promise<void>((resolve, reject) => {
       this.http.get<ApiResponse>(environment.kenApiUrl).toPromise().then(response => {
         this.ken.name = response.name;
-        this.ken.avatar_link = response.avatar_link;
+        this.ken.avatar_link = response.avatar_url;
+        console.log(response.avatar_url)
 
         resolve();
       },
@@ -55,6 +56,7 @@ export class KenGhService {
     let promise= new Promise<void>((resolve, reject) => {
       this.http.get<ApiResponse>(environment.kenRepoUrl).toPromise().then(response => {
         this.repo.results = (response.results)
+        console.log(response)
 
         resolve()
       }, error => {
