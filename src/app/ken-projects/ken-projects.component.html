@@ -17,7 +17,7 @@
 
     <div class="repos">
 
-        <h1 class="text text-center">My Repositories</h1>
+        <h1 class="text indigo-text text-center">My Repositories</h1>
 
         <div class="repositories">
             <div class="card  text-white" *ngFor="let r of repo.results;let i=index" appHighlight>
@@ -28,7 +28,7 @@
                     <p class="card-text">{{r.description}}</p><br>
                     <p> ~ Created {{r.created_at|dateElapsed}} days ago</p>
 
-                    <a href="{{r.homepage}}" target="_blank"> <button>Demo</button></a>
+                    <a href="{{r.homepage}}" target="_blank"> <button class="btn btn-primary rounded-pill">Demo</button></a>
                 </div>
             </div>
             

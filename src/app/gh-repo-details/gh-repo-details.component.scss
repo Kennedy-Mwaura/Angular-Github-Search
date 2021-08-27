@@ -17,9 +17,10 @@ $secondary-color: aquamarine;
     width: 23%;
     background-color: rgba(0, 0, 0,0.67);
     color: $primary-color;
-    border: $secondary-color solid 1px;
+    border: lawngreen solid 1px;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-right: 5px; 
 }
 
 a{

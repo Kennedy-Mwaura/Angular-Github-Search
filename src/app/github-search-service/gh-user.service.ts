@@ -12,13 +12,14 @@ export class GhUserService {
   
   userSearch(userSearch: HTMLInputElement){
     let apiUser = (environment.ghSearchUser+ userSearch.value);
+    console.log(apiUser, "apiUser");
 
     interface ApiResponse{
-      results: any
+      items: any
     }
     let promise = new Promise<void>((resolve, reject) => {
       this.http.get<ApiResponse>(apiUser).toPromise().then(response => {
-        this.user.results = response.results;
+        this.user.results = (response.items);
         resolve()
       },
       error => {
@@ -26,7 +27,7 @@ export class GhUserService {
         reject(error)
       })
     })
-      //return promise.promise();
+      return promise
     }
     returnUser() {
       return this.user;

@@ -10,7 +10,7 @@ $primary-color: #00bcd4;
 $secondary-color: aquamarine;
 
 .container-fluid{
-    padding-top: 10px;
+    padding-top: 0px;
     font-family: 'Metal Mania', cursive;
     color: $primary-color;
     display: inline-block;
@@ -29,17 +29,21 @@ a{
 
 .main{
     width: 95%;
-    float: left;
+    float: right;
     font-family: 'Metal Mania', cursive;
     background: url("../../assets/images/bg-img.jpg")no-repeat center center;
     background-size: cover;
     height: 90vh
+    
 }
 
 .socials{
     display: grid;
     width: 5%;
-    float: right;
+    float: left;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    
 }
 
 .socials a{

@@ -10,8 +10,8 @@ export class GhUserDetailsComponent implements OnInit {
   user: any;
 
   constructor( private ghuserservice: GhUserService) { 
-    this.ghuserservice.user.subscribe((user: any) => this.user = user);
   }
+
 
   
   ngOnInit(): void {

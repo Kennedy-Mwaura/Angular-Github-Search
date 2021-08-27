@@ -1,7 +1,7 @@
 <header class="h-100">
     <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark indigo scrolling-navbar intro-fixed-nav" [containerInside]="false">
         <mdb-navbar-brand>
-            <a class="logo navbar-brand" href="#"><strong>Navbar</strong></a>
+            <a class="logo navbar-brand"[routerLink]="['/home']"><strong>Zoo Github Search</strong></a>
         </mdb-navbar-brand>
         <links>
             <ul class="navbar-nav mr-auto">
@@ -9,10 +9,10 @@
                     <a class="nav-link" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item waves-light" mdbWavesEffect>
-                    <a class="nav-link">Link</a>
+                    <a class="nav-link" [routerLink]="['/projects']">Projects</a>
                 </li>
                 <li class="nav-item waves-light" mdbWavesEffect>
-                    <a class="nav-link">Profile</a>
+                    <a class="nav-link" href="#search">Search</a>
                 </li>
             </ul>
         </links>
@@ -20,16 +20,19 @@
     
 </header>
   <!--Main Layout-->
-  <main class="text-center py-5">
 
-    <div class="container">
-        <div class="inputs">
-        
-            <input type="text" name="search" id="search" placeholder="Search for users or repositories...." #search required>
-            <button class="btn btn-primary btn-sm" (click)="userSearch(search)" [routerLink]="['/users']"  > Search User</button>
-            <button class="btn btn-success btn-sm" (click)="repoSearch(search)" [routerLink]="['/repositories']" >Search Repositories</button>
+<div class="container-fluid scontainer ">  
+    <main class="text-center py-5 ">
+
+        <div class="search-container">
+            <div class="inputs">
+            
+                <input type="text" name="search" id="search" placeholder="Search for users or repositories...." #search required>
+                <button mdbBtn class="btn btn-primary btn-sm rounded-pill" gradient="ripe-malinka" (click)="userSearch(search)" [routerLink]="['/users']"  > Search User</button>
+                <button mdbBtn class="btn btn-success btn-sm rounded-pill" gradient="aqua" (click)="repoSearch(search)" [routerLink]="['/repositories']" >Search Repositories</button>
+            </div>
         </div>
-    </div>
 
-  </main>
+    </main>
   <!--Main Layout-->
+</div>

@@ -8,10 +8,13 @@
 .side{
     width: 10%;
     float: left;
-    font-family: 'p';
+    font-family: 'Metal Mania', cursive;
     padding-top: 20px;
+    margin-top: 75px;
     position: -webkit-fixed;
     position: fixed;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 .name h5{
     margin-bottom: 30px;
@@ -33,15 +36,19 @@ img{
     border-radius: 50%;
 }
 a{
-    color: $primary-color;
+    color: slateblue
 }
 hr{
     background-color: gold;
 }
 
 .card{
-    background-color: rgba(1, 1, 1,0.47);
-    border: $primary-color 1px ridge;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    border: lawngreen 1px ridge;
+    border-radius: 30px;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
     width: 25%;
 }
 
@@ -59,7 +66,7 @@ hr{
 }
 button{
     background: transparent;
-    color: $primary-color;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     border: $primary-color 1px solid;
 }
 

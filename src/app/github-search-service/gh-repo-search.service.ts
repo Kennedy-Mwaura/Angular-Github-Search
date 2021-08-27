@@ -20,6 +20,8 @@ export class GhRepoSearchService {
   }
   repoSearch(query: HTMLInputElement) {
     let repoApi = (environment.repoSearch + query.value);
+    console.log(repoApi, 'repoApi');
+    console.log(query.value, 'query.value');  // this is the search query
     
     interface ApiResponse {
       items: any;

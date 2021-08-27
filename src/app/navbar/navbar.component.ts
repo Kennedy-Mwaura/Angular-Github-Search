@@ -26,6 +26,7 @@ export class NavbarComponent implements OnInit {
       searchTerm.focus();
       return;
     }
+    console.log(searchTerm.value);
     this.ghreposearchservice.repoSearch(searchTerm);
     this.el.nativeElement.value = '';
   }

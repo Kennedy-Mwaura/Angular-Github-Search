@@ -1,4 +1,39 @@
-.container {
-    padding-top: 2em;
+.view{
+    margin-bottom: 0em;
+    padding-bottom: 0em
+}
+
+.scontainer {
+    padding-top: 2.8em;
+}
+main {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    
+}
+.search{
+    width: 100%;
+    margin-top: 0px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+#search {
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    width: 30%;
+
+}
+button{
+    margin-right:10px;
+    margin-left: 10px;
+    
+}
+.inputs{
+    width: 90%;
+    
+    float: right;
     
 }
