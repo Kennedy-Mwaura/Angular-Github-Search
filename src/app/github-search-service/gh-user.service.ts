@@ -10,7 +10,7 @@ export class GhUserService {
   user: GhUser | any;
   
   
-  GhUser(userSearch: HTMLInputElement){
+  userSearch(userSearch: HTMLInputElement){
     let apiUser = (environment.ghSearchUser+ userSearch.value);
 
     interface ApiResponse{

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
 
+
+
 img{
     width: 100%;
     border-radius: 50%;
@@ -8,7 +10,7 @@ $primary-color: #00bcd4;
 $secondary-color: aquamarine;
 
 .container-fluid{
-    padding-top: 180px;
+    padding-top: 10px;
     font-family: 'Metal Mania', cursive;
     color: $primary-color;
     display: inline-block;
@@ -28,7 +30,12 @@ a{
 .main{
     width: 95%;
     float: left;
+    font-family: 'Metal Mania', cursive;
+    background: url("../../assets/images/bg-img.jpg")no-repeat center center;
+    background-size: cover;
+    height: 90vh
 }
+
 .socials{
     display: grid;
     width: 5%;
