@@ -51,12 +51,12 @@ export class KenGhService {
   }
   kenRepoRequest(){
     interface ApiResponse {
-      results: any;
+      items: any;
     }
     let promise= new Promise<void>((resolve, reject) => {
       this.http.get<ApiResponse>(environment.kenRepoUrl).toPromise().then(response => {
-        this.repo.results = (response.results)
-        console.log(response)
+        this.repo.results = (response as ApiResponse);  
+        console.log(this.repo.results[0].name)
 
         resolve()
       }, error => {

@@ -7,10 +7,11 @@ export class DateElapsedPipe implements PipeTransform {
 
   transform(value: any): number { 
     let today:Date = new Date(); // get current date and time
-    let todayWithNoTime:any = new Date(today.getFullYear(), today.getMonth(), today.getDate())
+    let todayWithNoTime:any = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    value = value.split('');
     let createdYear: any = (value.splice(0,4)).join('');
     value.shift();
-    let createdMonth: any = ((value.splice(0,2)).join('')-1);
+    let createdMonth: any = ((value.splice(0,2)).join(''))-1;
     value.shift();
     let createdDate: any = (value.splice(0,2)).join('');
     let timeCreated: any = new Date(createdYear , createdMonth, createdDate);
