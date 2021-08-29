@@ -1,4 +1,5 @@
 # Angular Github Search
+
 ![logo](src/assets/images/Cloud%20Server%20Logo.gif)
 
 ## Brief description
