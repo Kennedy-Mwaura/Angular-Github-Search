@@ -9,8 +9,8 @@ import { KenProjectsComponent } from '../ken-projects/ken-projects.component';
 
 const routes: Routes = [
   {path: 'home', component: LandingPageComponent}, 
-  //{path: '', redirectTo: '/home', pathMatch: 'full'},
-  // {path: '**', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '**', redirectTo: '/home', pathMatch: 'full'},
   {path: 'repositories', component:GhRepoDetailsComponent},
   {path: 'users', component:GhUserDetailsComponent},
   {path: 'projects', component:KenProjectsComponent},
