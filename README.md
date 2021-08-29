@@ -12,7 +12,7 @@ This is Angular CLI project that allows a user to enter a GitHub username into a
 
 ## Deployed Projects
 
-[Link to live site]()
+[Link to live site](https://kennedy-mwaura.github.io/Angular-Github-Search/)
 
 ## Technologies Used
 
