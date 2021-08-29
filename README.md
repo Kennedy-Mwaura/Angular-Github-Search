@@ -1,4 +1,5 @@
 # Angular Github Search
+![logo](src/assets/images/Cloud%20Server%20Logo.gif)
 
 ## Brief description
 
@@ -12,8 +13,6 @@ This is Angular CLI project that allows a user to enter a GitHub username into a
 
 [Link to live site]()
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
-
 ## Technologies Used
 
 * HTML5
@@ -23,6 +22,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Angular
 * Git
   
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+
 ## Setup and Installation
 
 * Open Terminal {Ctrl+Alt+T}
